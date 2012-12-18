@@ -1,13 +1,13 @@
 markdown: rdiscount
 pygments: true
-permalink: /posts/:title
+permalink: /blog/:year/:month/:day/:title
 auto: true
 rdiscount:
   extensions: [smart]
-title : Carlos Becker
-production_url : http://caarlos0.github.com
-description: "Througths, flamewars, utilities, tutorials, codes, projects and other things by Carlos Alexandro Becker."
+title : joncanady (dot com)
+production_url : http://joncanady.com
+description: "A site."
 author :
-  name : Carlos Alexandro Becker
-  github : caarlos0
-  twitter : caarlos0
+  name : Jon Canady
+  github : joncanady
+  twitter : joncanady
