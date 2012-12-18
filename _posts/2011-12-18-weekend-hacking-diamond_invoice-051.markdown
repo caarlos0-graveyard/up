@@ -18,11 +18,11 @@ basic functionality in a convienent RubyGem! Presenting,
 
 It works like this:
 
-{% codeblock parse_invoice_example.rb %}
+{% highlight ruby %}
 invoice = DiamondInvoice.new(File.read('invoice.txt'))
 invoice.new_items
 # => ['avengers #257', 'batman: the brave and the bold special tpb', ...]
-{% endcodeblock %}
+{% endhighlight %}
 
 I'll be damned shocked if anyone ever uses this in anger, but if you want to
 critique my coding/testing style, here's a great project to do it on.
