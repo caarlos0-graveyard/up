@@ -1,0 +1,16 @@
+markdown: rdiscount
+pygments: true
+permalink: /posts/:title
+auto: true
+rdiscount:
+  extensions: [smart]
+title : Lucas Merencia
+production_url : http://lucasmerencia.github.com
+description: ""
+disqus_shortname: lucasmerenciablog
+analytics: UA-32899481-1
+gauges: 50f2b533613f5d7c8000000c
+author :
+  name : Lucas Merencia
+  github : lucasmerencia
+  twitter : lucasmerencia
