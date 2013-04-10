@@ -7,9 +7,9 @@ rdiscount:
 title : Lucas Merencia
 production_url : http://lucasmerencia.github.com
 description: ""
-disqus_shortname: lucasmerenciablog
-analytics: UA-32899481-1
-gauges: 50f2b533613f5d7c8000000c
+disqus_shortname: merenciablog
+analytics: UA-40045005-1
+gauges: 
 author :
   name : Lucas Merencia
   github : lucasmerencia
