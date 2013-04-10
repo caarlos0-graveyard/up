@@ -18,4 +18,3 @@ I using Jekyll with [UP](https://github.com/caarlos0/up) a [Bootstrap](http://ge
 Well, I think is it for now. Have a nice day!
 
 
-
