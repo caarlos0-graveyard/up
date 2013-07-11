@@ -1,6 +1,6 @@
 ---
 layout: post
-title: SVN Diff Files With Vimdiff!
+title: SVN Diff Files With Vimdiff
 category: posts
 ---
 
