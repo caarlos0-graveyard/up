@@ -3,7 +3,7 @@ body {
   font-family: 'Open Sans', sans-serif;
 }
 body {
-  padding-top: 50px;
+  /*padding-top: 50px;*/
 }
 h1,h2,h3,h4,h5,h6 {
   font-weight: 100;
@@ -95,19 +95,19 @@ div.navbar .navbar-inner a.brand {
   margin-top: 50px;
   /*border-top: 1px solid #f5f5f5;*/
 }
-#sidebar section.meta {
+#sidebar section.meta, #feed{
   padding: 30px;
   color: #EEE;
   text-align: center;
 }
-#sidebar section.meta a {
+#sidebar section.meta a{
   font-size: 0.8em;
   color: #555;
   text-decoration: none;
   transition: color 0.25s ease-in;
   -webkit-transition: color 0.25s ease-in;
 }
-#sidebar section.meta a:hover {
+#sidebar section.meta a:hover{
   color: #307EA9;
 }
 #sidebar section.meta i.icon {
@@ -128,9 +128,10 @@ div.navbar .navbar-inner a.brand {
 
 #sidebar{
   text-align: center;
+  border-right: 1px solid #f5f5f5;
 }
 
-#sidebar .thumbnail{ 
+#sidebar .thumbnail{
   width: 150px;
   height: 150px;
   border-radius: 150px;
@@ -140,4 +141,33 @@ div.navbar .navbar-inner a.brand {
 
 #photo{
   border-radius: 150px;
+}
+
+#content{
+  padding: 50px;
+}
+
+#menu{
+
+}
+
+#menu a{
+  display: block;
+  height: 30px;
+  margin-top: 10px;
+  border-bottom: 1px solid #f5f5f5;
+}
+
+#feed{
+  height: 30px;
+  width: 30px;
+}
+
+#feed a{
+  color: #EEE;
+  text-decoration: none;
+}
+
+#feed a i{
+  margin-top: 30px;
 }

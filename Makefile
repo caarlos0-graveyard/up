@@ -5,7 +5,7 @@ build:
 	@echo "${HR}"
 	@echo "Building Up..."
 	@echo "${HR}"
-	@cat css/{bootstrap,custom,bootstrap-responsive,font-awesome}.css > css/up.css
+	@cat css/{bootstrap.min,custom,bootstrap-responsive.min,font-awesome}.css > css/up.css
 	@recess --compress css/up.css > css/up.min.css
 	@echo "Compressing CSS with Recess...               ${CHECK} Done"
 	@echo "${HR}"
