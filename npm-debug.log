@@ -1,0 +1,64 @@
+0 info it worked if it ends with ok
+1 verbose cli [ '/usr/bin/node', '/usr/bin/npm', 'install', 'recess', '-g' ]
+2 info using npm@1.2.32
+3 info using node@v0.10.12
+4 verbose node symlink /usr/bin/node
+5 verbose read json /usr/lib/package.json
+6 verbose read json /usr/lib/package.json
+7 verbose cache add [ 'recess', null ]
+8 verbose cache add name=undefined spec="recess" args=["recess",null]
+9 verbose parsed url { protocol: null,
+9 verbose parsed url   slashes: null,
+9 verbose parsed url   auth: null,
+9 verbose parsed url   host: null,
+9 verbose parsed url   port: null,
+9 verbose parsed url   hostname: null,
+9 verbose parsed url   hash: null,
+9 verbose parsed url   search: null,
+9 verbose parsed url   query: null,
+9 verbose parsed url   pathname: 'recess',
+9 verbose parsed url   path: 'recess',
+9 verbose parsed url   href: 'recess' }
+10 silly lockFile d0d1f171-recess recess
+11 verbose lock recess /home/lucas/.npm/d0d1f171-recess.lock
+12 silly lockFile d0d1f171-recess recess
+13 silly lockFile d0d1f171-recess recess
+14 verbose addNamed [ 'recess', '' ]
+15 verbose addNamed [ null, '' ]
+16 silly lockFile e131134d-recess recess@
+17 verbose lock recess@ /home/lucas/.npm/e131134d-recess.lock
+18 silly addNameRange { name: 'recess', range: '', hasData: false }
+19 verbose url raw recess
+20 verbose url resolving [ 'https://registry.npmjs.org/', './recess' ]
+21 verbose url resolved https://registry.npmjs.org/recess
+22 info trying registry request attempt 1 at 17:41:12
+23 http GET https://registry.npmjs.org/recess
+24 info retry will retry, error on last attempt: Error: tunneling socket could not be established, cause=read ECONNRESET
+25 info trying registry request attempt 2 at 17:41:22
+26 http GET https://registry.npmjs.org/recess
+27 info retry will retry, error on last attempt: Error: tunneling socket could not be established, cause=read ECONNRESET
+28 info trying registry request attempt 3 at 17:42:22
+29 http GET https://registry.npmjs.org/recess
+30 silly lockFile e131134d-recess recess@
+31 silly lockFile e131134d-recess recess@
+32 error Error: tunneling socket could not be established, cause=read ECONNRESET
+32 error     at ClientRequest.onError (/usr/lib/node_modules/npm/node_modules/request/node_modules/tunnel-agent/index.js:159:17)
+32 error     at ClientRequest.g (events.js:175:14)
+32 error     at ClientRequest.EventEmitter.emit (events.js:95:17)
+32 error     at CleartextStream.socketErrorListener (http.js:1517:9)
+32 error     at CleartextStream.EventEmitter.emit (events.js:95:17)
+32 error     at Socket.onerror (tls.js:1421:17)
+32 error     at Socket.EventEmitter.emit (events.js:117:20)
+32 error     at net.js:441:14
+32 error     at process._tickCallback (node.js:415:13)
+33 error If you need help, you may report this log at:
+33 error     <http://github.com/isaacs/npm/issues>
+33 error or email it to:
+33 error     <npm-@googlegroups.com>
+34 error System Linux 3.8.0-26-generic
+35 error command "/usr/bin/node" "/usr/bin/npm" "install" "recess" "-g"
+36 error cwd /home/lucas/blog
+37 error node -v v0.10.12
+38 error npm -v 1.2.32
+39 error code ECONNRESET
+40 verbose exit [ 1, true ]
