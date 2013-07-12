@@ -125,3 +125,17 @@ div.navbar .navbar-inner a.brand {
     margin-top: 30px;
   }
 }
+
+#sidebar{
+  text-align: center;
+}
+
+#sidebar .thumbnail{ 
+  width: 200px;
+  height: 200px;
+  border-radius: 200px;
+}
+
+#photo{
+  border-radius: 200px;
+}

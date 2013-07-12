@@ -1,0 +1,32 @@
+
+
+<div class="thumbnails"> 
+	<div class="thumbnail">
+		<img id="photo">
+	</div>
+</div>
+<section class="meta">
+	<div class="row-fluid">
+		<div class="span6">
+			<a href="https://twitter.com/{{ site.author.twitter }}">
+				<i class="icon icon-twitter icon-2x"></i>
+				<div>Follow me.</div>
+			</a>
+		</div>
+		<div class="span6 next">
+			<a href="https://github.com/{{ site.author.github }}">
+				<i class="icon icon-github icon-2x"></i>
+				<div>
+					See my github profile.
+				</div>
+			</a>
+		</div>
+		<div class="span3"></div>
+	</div>
+</section>
+
+<script type="text/javascript">
+	var email = "{{ site.author.email }}";
+	var hash = $.md5(email);
+	$("#photo").attr("src", "http://www.gravatar.com/avatar/"+hash+"?s=200");
+</script>

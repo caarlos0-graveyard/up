@@ -12,7 +12,12 @@
 
   <link rel="alternate" type="application/rss+xml" href="/atom.xml" />
 
-  <link href="/css/up.min.css" rel="stylesheet">
+  <link href="/css/bootstrap.min.css" rel="stylesheet">
+  <link href="/css/bootstrap-responsive.min.css" rel="stylesheet">
+  <link href="/css/custom.css" rel="stylesheet">
+  <link href="/css/font-awesome.css" rel="stylesheet">
+
+
   <link href='http://fonts.googleapis.com/css?family=Open+Sans:400,300'
   rel='stylesheet' type='text/css'>
 
@@ -22,10 +27,13 @@
   <![endif]-->
 
   <link rel="apple-touch-icon" href="/apple-touch-icon.jpg" />
+
+  <script type="text/javascript" src="javascript/jquery.js"></script>
+  <script type="text/javascript" src="javascript/md5.js"></script>
 </head>
 
 <body>
-  <div class="navbar navbar-inverse navbar-fixed-top">
+<!--   <div class="navbar navbar-fixed-top">
     <div class="navbar-inner">
       <div class="container">
         <a class="brand" href="/">{{ site.title }}</a>
@@ -34,7 +42,7 @@
         </ul>
         <ul class="nav pull-right">
           <li>
-            <a href="/atom.xml" title="Atom Feed">
+            <a href="/atom.xml" title="Atom Feed">asd
               <i class="icon-rss icon-large"></i>
             </a>
           </li>
@@ -42,38 +50,24 @@
       </div>
     </div>
   </div>
-
-  <div class="container">
-    {{ content }}
+-->
+<div class="container">
+  <div class="row-fluid">
+    <div id="sidebar" class="span3">
+      {% include sidebar.html %}
+    </div>
+    <div id="content" class="span9">
+      {{ content }}
+    </div>
   </div>
 
-  <div id="footer">
-    <section class="meta">
-      <div class="container">
-        <div class="row">
-          <div class="span3"></div>
-          <div class="span2">
-            <a href="https://twitter.com/{{ site.author.twitter }}">
-              <i class="icon icon-twitter icon-4x"></i>
-              <div>Follow me on Twitter.</div>
-            </a>
-          </div>
-          <div class="span2"></div>
-          <div class="span2 next">
-            <a href="https://github.com/{{ site.author.github }}">
-              <i class="icon icon-github icon-4x"></i>
-              <div>
-                See my github profile.
-              </div>
-            </a>
-          </div>
-          <div class="span3"></div>
-        </div>
-      </div>
-    </section>
-  </div>
-  {% include analytics.html %}
-  {% include gauges.html %}
+</div>
+
+<div id="footer">
+
+</div>
+{% include analytics.html %}
+{% include gauges.html %}
 </body>
 
 </html>
