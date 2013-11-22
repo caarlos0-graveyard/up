@@ -15,15 +15,16 @@ took something from [jekyll-bootstrap](https://github.com/plusjade/jekyll-bootst
 and, of course, I'm using [bootstrap](https://github.com/twitter/bootstrap) as
 a base for whole thing.
 
-![Up 2](http://f.cl.ly/items/3S2m1X2I1V0s0E2P1s38/Captura%20de%20Tela%202013-04-08%20%C3%A0s%2000.37.30.png)
+![Up 2](http://f.cl.ly/items/1k0B3m21451e0G1i3u0F/up_v2.png)
 
 ## Installation
 
 - [Fork this repository](https://github.com/caarlos0/up/fork)
-- Rename it to `YOUR-USER.github.com`
-- Clone it: `git clone https://github.com/YOUR-USER/YOUR-USER.github.com`
-- Run the bundler in the blog folder to get the dependencies: `bundle`
-- Run the jekyll server: `rake preview`.
+- Rename it to `YOUR-USER.github.io`
+- Clone it: `git clone https://github.com/YOUR-USER/YOUR-USER.github.io`
+- With Ruby, bundler, Node.js and NPM previously installed, run the init script
+`./scripts/init`;
+- Start it up in watch mode: `foreman start -f Procfile.dev`.
 
 You should have a server up and running locally at <http://localhost:4000>.
 
@@ -34,27 +35,26 @@ change is the following:
 
 - [_config.yml](https://github.com/caarlos0/up/blob/gh-pages/_config.yml): Put
 your config there, almost everything will be up and running.
-- [about.html](https://github.com/caarlos0/up/blob/gh-pages/about.html): Well, that's
-about you, I would change it if I were you... OH WAIT!
+- [about/index.html](https://github.com/caarlos0/up/blob/gh-pages/about/index.html):
+Well, that's about you, I would change it if I were you... OH WAIT!
 - [CNAME](https://github.com/caarlos0/up/blob/gh-pages/CNAME): If you're using
 this on GitHub Pages with a custom domain name, you might want to change this to be
 the domain you're going to use. All that should be in here is a
 domain name on the first line and nothing else (like: `example.com`).
 - [favicon.ico](https://github.com/caarlos0/up/blob/gh-pages/favicon.ico): This
 is a smaller version of my gravatar for use as the icon in your browser's
-address bar. You may change it to whatever you like.
+address bar. You may change it to whatever you like. [Updating your icons][up-icons].
 - [apple-touch-icon.jpg](https://github.com/caarlos0/up/blob/gh-pages/apple-touch-icon.jpg):
 Again, this is my gravatar, and it shows up in iOS and various other apps
-that use this file as an "icon" for your site.
+that use this file as an "icon" for your site. [Updating your icons][up-icons].
+
+[up-icons]: https://github.com/caarlos0/up#update-favicon-and-apple-precomposed-icons-based-on-gravatar
 
 ### Custom CSS/JS
 
-If you need custom CSS or JS, you will need `node.js'` `npm` executable in
-your `PATH`, as well `recess` and `uglify-js`. To do this, after installed
-`npm`, in your blog folder, run: `npm install`.
-
-It will install `recess` and `uglify-js` executables for you. Now, do your
-changes in `less` and/or `js` files, and run `make` to compile the files.
+Assets are now managed by bower. You could simply run `grunt` whenever you
+want to update your assets. `grunt watch` will also watch everything for
+changes.
 
 Note: I'm not using any Jekyll asset pipeline because it's not supported
 by [GitHub Pages](http://pages.github.com), so, I prefer to do it by myself.
@@ -79,9 +79,8 @@ You should deploy with [GitHub Pages](http://pages.github.com)- it's just
 easier.
 
 All you should have to do is to rename your repository on GitHub to be
-`username.github.com`. Since everything is on the `gh-pages` branch, you
-should be able to see your new site at <http://username.github.com>.
-
+`username.github.io`. Since this is a Jekyll project, you
+should be able to see your new site at <http://username.github.io>.
 
 ## Licensing
 
