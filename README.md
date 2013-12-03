@@ -1,6 +1,3 @@
-> This is the new WIP version. You can take a look at old 1.4.0 release
-[here](https://github.com/caarlos0/up/tree/v1.4.0).
-
 Up
 --------------
 
