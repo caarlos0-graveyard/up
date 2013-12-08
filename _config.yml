@@ -3,6 +3,7 @@ pygments: true
 permalink: /posts/:title
 rdiscount:
   extensions: [smart]
+exclude: [ Gemfile, Gemfile.lock, gems, _assets, bower_components ]
 title : Carlos Becker
 production_url : http://carlosbecker.com
 description: "Througths, flamewars, utilities, tutorials, codes, projects and other things by Carlos Alexandro Becker."
