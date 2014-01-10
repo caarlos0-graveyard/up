@@ -4,7 +4,7 @@ title: "Replicate Heroku Production Data in Development"
 category: ruby
 ---
 
-### The Short Version
+## The Short Version
 
 Quickly replicate a Heroku production applications database to your rails
 development database with the following command:
@@ -13,7 +13,7 @@ development database with the following command:
 ./script/replicate
 {% endhighlight %}
 
-### The Long Version
+## The Long Version
 
 Sometimes when I have a project in production a bug occurs which I am unable to
 replicate on my development machine without a copy of the production data.

@@ -4,6 +4,22 @@ title: "Deploy Feature Branches to Heroku with Heroku Feature Deployments Gem"
 category: ruby
 ---
 
+## The Short Version
+
+Deploy the branch you are currently on to Heroku, create a Pull Request, configure DNS and report in PivotalTracker with my [Heroku Feature Deployments gem](https://github.com/mattbeedle/heroku_feature_deployments) using the following command.
+
+{% highlight bash %}
+rake hfd:deploy
+{% endhighlight %}
+
+And tear everything down again with:
+
+{% highlight bash %}
+rake hfd:undeploy
+{% endhighlight %}
+
+## The Long Version
+
 ### The problem
 
 I often find that one major bottleneck in the process of building and shipping
@@ -28,13 +44,13 @@ My idea for a process is this:
 - Developer does required work
 - Developer creates a pull request in GitHub
 - Developer creates a new Heroku app and deploys the site there
-- Developer sets up the dns so that the site runs on a subdomain.
+- Developer sets up the DNS so that the site runs on a subdomain.
   (http://FEATURE_NAME.mattbeedle.name for example)
 - Developer adds this link to the project managment tool and marks the
   story/task/feature as ready for testing
 - Feature Owner tests the functionality on the subdomain and accepts the work
   (hopefully)
-- Developer deletes the Heroku app, dns settings, etc
+- Developer deletes the Heroku app, DNS settings, etc
 - Developer marks the pull request as ready for review in GitHub
 - Team reviews the pull request and merges into master
 - CI server runs tests and if all passes then deploys to the live site
@@ -55,10 +71,19 @@ In order to automate this we've been using a [very simple gem](https://github.co
 - creating a pull request in GitHub
 - adding a link to the story in the PivotalTracker
 
-### Tearing Down
+All handled by 1 rake task:
+{% highlight bash %}
+rake hfd:deploy
+{% endhighlight %}
+
+#### Tearing Down
 
 - Deleting the Heroku app
 - Removing DNS settings
+
+{% highlight bash %}
+rake hfd:undeploy
+{% endhighlight %}
 
 This process has worked very well for us so far. The reason it's a temporary
 solution is that the gem right now sucks. It's does not have automated tests and
