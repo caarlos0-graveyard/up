@@ -22,7 +22,7 @@ CONFIG = {
 desc "Begin a new post in #{CONFIG['posts']}"
 task :post do
   abort("rake aborted: '#{CONFIG['posts']}' directory not found.") unless FileTest.
-    directory?(CONFIG['posts'])
+  directory?(CONFIG['posts'])
   title = ENV["title"] || "new-post"
   slug = title.downcase.strip.gsub(' ', '-').gsub(/[^\w-]/, '')
   begin
@@ -84,10 +84,18 @@ task :icons do
   [144, 114, 72, 57].each do |size|
     puts "Creating #{name_pre} icon..." % [size, size]
     Magick::Image::read(origin).first.resize(size, size).
-      write(name_pre % [size, size])
+    write(name_pre % [size, size])
   end
   puts "Cleaning up..."
   File.delete origin
 end
-
+desc "Install libs required by theme"
+task :init do
+  puts "Downloading and installing reuired javascript plugins"
+  `npm install -g grunt-cli bower`
+  `npm install`
+  `bower install`
+  puts "Downloading Bootstrap and Font Awesome"
+  `grunt`
+end
 
