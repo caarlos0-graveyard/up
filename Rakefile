@@ -90,4 +90,13 @@ task :icons do
   File.delete origin
 end
 
+desc "Install libs required by theme"
+task :init do
+  puts "Downloading and installing required javascript plugins"
+  `npm install -g grunt-cli bower`
+  `npm install`
+  `bower install`
+  puts "Downloading Bootstrap and Font Awesome"
+  `grunt`
+end
 
