@@ -4,7 +4,7 @@ permalink: /posts/:title
 rdiscount:
   extensions: [smart]
 title : Matt Beedle
-production_url : http://mattbeedle.name
+production_url : http://blog.mattbeedle.name
 description: "Blog attempt 5, by Matt Beedle"
 disqus_shortname: mattbeedleblog
 analytics: UA-43466624-1
