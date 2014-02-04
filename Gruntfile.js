@@ -1,12 +1,24 @@
 module.exports = function(grunt) {
   grunt.initConfig({
     pkg: grunt.file.readJSON('package.json'),
+    curl: {
+      '_assets/turbolinks.coffee': 'https://raw.github.com/rails/turbolinks/master/lib/assets/javascripts/turbolinks.js.coffee'
+    },
+    coffee: {
+      compile: {
+        files: {
+          '_assets/turbolinks.coffee.js': '_assets/turbolinks.coffee'
+        }
+      }
+    },
     concat: {
       dist: {
         src: [
           'bower_components/jquery/jquery.min.js',
           'bower_components/bootstrap/js/transition.js',
           'bower_components/bootstrap/js/collapse.js',
+          'bower_components/nprogress/nprogress.js',
+          '_assets/turbolinks.coffee.js',
           '_assets/up.js'
         ],
         dest: 'js/up.js'
@@ -23,6 +35,7 @@ module.exports = function(grunt) {
         options: {
           paths: [
             '_assets/',
+            'bower_components/nprogress/',
             'bower_components/bootstrap/less/',
             'bower_components/font-awesome/less/'
           ]
@@ -35,6 +48,7 @@ module.exports = function(grunt) {
         options: {
           paths: [
             '_assets/',
+            'bower_components/nprogress/',
             'bower_components/bootstrap/less/',
             'bower_components/font-awesome/less/'
           ],
@@ -81,7 +95,9 @@ module.exports = function(grunt) {
   grunt.loadNpmTasks('grunt-contrib-less');
   grunt.loadNpmTasks('grunt-contrib-watch');
   grunt.loadNpmTasks('grunt-contrib-copy');
+  grunt.loadNpmTasks('grunt-contrib-coffee');
+  grunt.loadNpmTasks('grunt-curl');
 
   // Default task(s).
-  grunt.registerTask('default', ['concat', 'uglify', 'less', 'copy']);
+  grunt.registerTask('default', ['curl', 'coffee', 'concat', 'uglify', 'less', 'copy']);
 };
