@@ -26,7 +26,7 @@ application database.
 
 Recently [Corey Martin](https://twitter.com/coreyitguy)
 wrote a [blog post](http://aspiringwebdev.com/a-smarter-nutrition-label/) about
-using this gem to build [smarter nutrition
+using my gem along with some others to build [smarter nutrition
 labels](http://www.cooksmarts.com/weekly-meal-plan-service/nutrition/about-nutrition-label/#.U1QuYeZdWdY)
 for [CookSmarts](http://www.cooksmarts.com/). In it he mentions them building
 their own server just for serving nutrient information, which eventually
