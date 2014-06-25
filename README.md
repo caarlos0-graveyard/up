@@ -1,6 +1,3 @@
-> This is the new WIP version. You can take a look at old 1.4.0 release
-[here](https://github.com/caarlos0/up/tree/v1.4.0).
-
 Up
 --------------
 
@@ -23,7 +20,7 @@ a base for whole thing.
 - Rename it to `YOUR-USER.github.io`
 - Clone it: `git clone https://github.com/YOUR-USER/YOUR-USER.github.io`
 - With Ruby, bundler, Node.js and NPM previously installed, run the init script
-`./scripts/init`;
+`bundle && rake init`;
 - Start it up in watch mode: `foreman start -f Procfile.dev`.
 
 You should have a server up and running locally at <http://localhost:4000>.

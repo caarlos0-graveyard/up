@@ -3,6 +3,7 @@ pygments: true
 permalink: /posts/:title
 rdiscount:
   extensions: [smart]
+exclude: [ Gemfile, Gemfile.lock, gems, _assets, bower_components ]
 title : Matt Beedle
 production_url : http://blog.mattbeedle.name
 description: "Blog attempt 5, by Matt Beedle"
