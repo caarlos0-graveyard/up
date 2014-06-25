@@ -4,7 +4,7 @@ title: "File Uploads in Ember Data"
 category: EmberJS
 ---
 
-Recently I've been working on an EmberJS application ([SalesFlip](http://www.salesflip.com)) which
+Recently I've been working on an EmberJS application ([SalesFlip](http://www.salesflip.com) - go register there now) which
 needs to allow file uploads. There are a couple of different approaches to this
 which I'll discuss here, along with a new one which I would like to propose. If
 you are wondering what all the import and export statements are in the examples
@@ -173,6 +173,9 @@ User = DS.Model.extend
 
 `export default User`
 {% endhighlight %}
+
+Create a FormDataAdapter. This is what handles uploading the data via FormData
+instead of the default JSON.
 
 app/adapters/form_data.coffee
 {% highlight coffeescript %}
