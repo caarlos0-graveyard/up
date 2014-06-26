@@ -174,6 +174,29 @@ User = DS.Model.extend
 `export default User`
 {% endhighlight %}
 
+Create a FileUpload input. This is what assigns the file to the model
+
+app/views/file_upload.coffee
+{% highlight coffeescript %}
+FileUploadView = Ember.View.extend
+    content: null
+    type: 'file'
+
+    change: (event) ->
+        if event.target.files.length > 0
+            @set('content', event.target.files[0])
+        else
+            @set('content', null)
+
+`export default FileUploadView`
+
+{% endhighlight %}
+
+app/templates/users/new.hbs
+{% highlight html %}
+view "file-upload" contentBinding="avatar"
+{% endhighlight %}
+
 Create a FormDataAdapter. This is what handles uploading the data via FormData
 instead of the default JSON.
 
