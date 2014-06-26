@@ -59,9 +59,9 @@ UploadFile = Ember.TextField.extend
     attributeBindings: ['name']
     type: 'file'
     file: null
-    change: (e) ->
-        var reader = new FileReader()
-        reader.onload = (e) ->
+    change: (e) =>
+        reader = new FileReader()
+        reader.onload = (e) =>
             fileToUpload = e.target.result
             Ember.run =>
                 @set 'file', fileToUpload
