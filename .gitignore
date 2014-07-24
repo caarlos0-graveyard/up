@@ -15,3 +15,5 @@ node_modules/
 
 bower_components/
 components/
+
+.bundle
