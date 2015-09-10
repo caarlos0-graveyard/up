@@ -6,7 +6,7 @@
       <span class="icon-bar"></span>
       <span class="icon-bar"></span>
     </button>
-    <a class="navbar-brand" href="/">{{ site.title }}</a>
+    <a class="navbar-brand" href="{{ site.baseurl }}/">{{ site.title }}</a>
   </div>
 
   <div class="collapse navbar-collapse navbar-pages">
@@ -22,18 +22,18 @@
     </a>
   </li>
   <li>
-    <a class="hidden-xs" title="About me" href="/about">
+    <a class="hidden-xs" title="About me" href="{{ site.baseurl }}/about">
       <i class="fa fa-user fa-lg"></i>
     </a>
-    <a class="visible-xs" title="About me" href="/about">
+    <a class="visible-xs" title="About me" href="{{ site.baseurl }}/about">
       <i class="fa fa-user fa-lg"></i> About me
     </a>
   </li>
   <li>
-    <a class="hidden-xs" href="/atom.xml" title="Atom Feed">
+    <a class="hidden-xs" href="{{ site.baseurl }}/atom.xml" title="Atom Feed">
       <i class="fa fa-rss fa-lg"></i>
     </a>
-    <a class="visible-xs" href="/atom.xml" title="Atom Feed">
+    <a class="visible-xs" href="{{ site.baseurl }}/atom.xml" title="Atom Feed">
       <i class="fa fa-rss fa-lg"></i> Atom Feed
     </a>
   </li>
