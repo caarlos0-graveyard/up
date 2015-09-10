@@ -8,9 +8,9 @@
   <meta name="description" content="{{ site.description }}" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-  <link rel="alternate" type="application/rss+xml" href="/atom.xml" />
+  <link rel="alternate" type="application/rss+xml" href="{{ site.baseurl }}/atom.xml" />
 
-  <link href="/css/up.css" rel="stylesheet">
+  <link href="{{ site.baseurl }}/css/up.css" rel="stylesheet">
 
   <!--[if lt IE 9]>
   <script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
@@ -20,7 +20,7 @@
   <link rel="apple-touch-icon-precomposed" sizes="114x114" href="apple-touch-icon-114x114-precomposed.png">
   <link rel="apple-touch-icon-precomposed" sizes="72x72" href="apple-touch-icon-72x72-precomposed.png">
   <link rel="apple-touch-icon-precomposed" href="apple-touch-icon-57x57-precomposed.png">
-  <link rel="shortcut icon" href="/favicon.ico">
+  <link rel="shortcut icon" href="{{ site.baseurl }}/favicon.ico">
 
 </head>
 
@@ -36,7 +36,7 @@
   {% include gauges.html %}
 </body>
 <script src="http://code.jquery.com/jquery-1.9.1.min.js"></script>
-<script src="/js/up.min.js"></script>
+<script src="{{ site.baseurl }}/js/up.min.js"></script>
 <link href='http://fonts.googleapis.com/css?family=Open+Sans:400,300'
   rel='stylesheet' type='text/css'>
 </html>
