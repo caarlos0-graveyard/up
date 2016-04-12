@@ -1,6 +1,5 @@
 markdown: rdiscount
 pygments: true
-permalink: 
 rdiscount:
   extensions: [smart]
 exclude: [ Gemfile, Gemfile.lock, gems, _assets, bower_components ]
