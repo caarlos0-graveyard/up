@@ -1,4 +1,5 @@
 markdown: rdiscount
+layout: default
 pygments: true
 rdiscount:
   extensions: [smart]
